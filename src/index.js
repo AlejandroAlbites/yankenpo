@@ -31,13 +31,13 @@ btnTijera.addEventListener('click', () => {
 
 const play = (opcionUsuario) =>{
 
-    usuarioImg.src = "/assets/"+opcionUsuario+"1.png"
+    usuarioImg.src = "./assets/"+opcionUsuario+"1.png"
 
     resultadoTexto.innerHTML = "PENSANDO";
 
     const intervalo = setInterval(() => {
         const opcionMaquina = calcularMaquinaOpcion();
-        maquinaImg.src = "/assets/"+opcionMaquina+"2.png"
+        maquinaImg.src = "./assets/"+opcionMaquina+"2.png"
         
     }, 150);
 
@@ -50,7 +50,7 @@ const play = (opcionUsuario) =>{
         const resultado = calcularResultado(opcionUsuario, opcionMaquina);
 
    
-    maquinaImg.src = "/assets/"+opcionMaquina+"2.png"
+    maquinaImg.src = "./assets/"+opcionMaquina+"2.png"
 
     switch(resultado){
         case EMPATE:
